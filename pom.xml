@@ -43,8 +43,8 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <jdk.debug>true</jdk.debug>
         <jdk.optimize>false</jdk.optimize>
-        <jdk.source>1.6</jdk.source>
-        <jdk.target>1.6</jdk.target>
+        <jdk.source>1.7</jdk.source>
+        <jdk.target>1.7</jdk.target>
 
         <version.slf4j>1.6.1</version.slf4j>
 

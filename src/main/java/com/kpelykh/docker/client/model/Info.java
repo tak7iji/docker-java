@@ -51,6 +51,9 @@ public class Info {
     @JsonProperty("NGoroutines")
     private int    NGoroutines;
 
+    @JsonProperty("SwapLimit")
+    private int    SwapLimit;
+
     public boolean isDebug() {
         return debug;
     }
@@ -101,6 +104,10 @@ public class Info {
 
     public int getNGoroutines() {
         return NGoroutines;
+    }
+
+    public int getSwapLimit() {
+        return SwapLimit;
     }
 
     @Override
