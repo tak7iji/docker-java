@@ -35,6 +35,7 @@ public class ContainerConfig {
     @JsonProperty("Privileged")   private boolean privileged = false;
     @JsonProperty("WorkingDir")   private String workingDir = "";
     @JsonProperty("Domainname")   private String domainName = "";
+    @JsonProperty("OnBuild")      private String onBuild = "";
     // FIXME Is this the right type? -BJE
     @JsonProperty("ExposedPorts")   private Map<String, ?> exposedPorts;
 
@@ -48,6 +49,10 @@ public class ContainerConfig {
 
     public String getDomainName() {
         return domainName;
+    }
+
+    public String getOnBuild() {
+        return onBuild;
     }
 
     public String getWorkingDir() { return workingDir; }
@@ -246,6 +251,7 @@ public class ContainerConfig {
                 ", privileged=" + privileged +
                 ", workingDir='" + workingDir + '\'' +
                 ", domainName='" + domainName + '\'' +
+                ", onBuild='" + onBuild + '\'' +
                 '}';
     }
 }
